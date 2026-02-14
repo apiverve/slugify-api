@@ -20,7 +20,7 @@ namespace APIVerve.Examples
         private static readonly string API_URL = "https://api.apiverve.com/v1/slugify";
 
         /// <summary>
-        /// Make a POST request to the Slugify API
+        /// Make a GET request to the Slugify API
         /// </summary>
         static async Task<JsonDocument> CallSlugifyAPI()
         {
@@ -29,13 +29,7 @@ namespace APIVerve.Examples
                 using var client = new HttpClient();
                 client.DefaultRequestHeaders.Add("x-api-key", API_KEY);
 
-                // Request body
-                var requestBody &#x3D; new { text &#x3D; &quot;Hello World! This is a Test &amp; Example&quot;, separator &#x3D; &quot;-&quot;, lowercase &#x3D; &quot;true&quot; };
-
-                var jsonContent = JsonSerializer.Serialize(requestBody);
-                var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
-
-                var response = await client.PostAsync(API_URL, content);
+                var response = await client.GetAsync(API_URL);
 
                 // Check if response is successful
                 response.EnsureSuccessStatusCode();
