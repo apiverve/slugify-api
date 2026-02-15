@@ -1,1 +1,3 @@
-from .apiClient import SlugifyAPIClient
+from .apiClient import SlugifyAPIClient, SlugifyAPIClientError
+
+__all__ = ['SlugifyAPIClient', 'SlugifyAPIClientError']
