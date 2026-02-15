@@ -1,17 +1,20 @@
 [project]
 name = "apiverve-slugify"
-version = "1.1.12"
+version = "1.1.13"
 authors = [
   { name="APIVerve", email="hello@apiverve.com" },
 ]
 description = "Slugify is a tool for converting text into URL-friendly slugs. It handles special characters, accents, and spaces to create clean, SEO-friendly URLs."
-keywords = ["slug", "slugify", "url slug", "seo slug", "url friendly"]
+keywords = []
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.7"
+license = "MIT"
+dependencies = [
+    "requests>=2.25.0"
+]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Intended Audience :: Developers",
     "Intended Audience :: Financial and Insurance Industry",
