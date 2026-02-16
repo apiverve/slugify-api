@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:slugify-api:1.1.13'
+    implementation 'com.github.apiverve:slugify-api:1.1.14'
 }
 ```
 
@@ -47,7 +47,7 @@ SlugifyAPIClient client = new SlugifyAPIClient("YOUR_API_KEY");
 try {
     // Prepare request parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("text", "Hello World: A Complete Guide!");
+    parameters.put("text", "Hello World! This is a Test & Example");
     parameters.put("separator", "-");
     parameters.put("lowercase", true);
 
