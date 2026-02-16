@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/slugify",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Slugify is a tool for converting text into URL-friendly slugs. It handles special characters, accents, and spaces to create clean, SEO-friendly URLs.",
   "main": "index.js",
   "types": "index.d.ts",
