@@ -44,7 +44,11 @@ from apiverve_slugify.apiClient import SlugifyAPIClient
 # Initialize the client with your APIVerve API key
 api = SlugifyAPIClient("[YOUR_API_KEY]")
 
-query = { "text": "Hello World! This is a Test & Example", "separator": "-", "lowercase": "true" }
+query = {
+    "text": "Hello World! This is a Test & Example",
+    "separator": "-",
+    "lowercase": "true"
+}
 
 try:
     # Make the API call
@@ -82,7 +86,11 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "text": "Hello World! This is a Test & Example", "separator": "-", "lowercase": "true" }
+query = {
+    "text": "Hello World! This is a Test & Example",
+    "separator": "-",
+    "lowercase": "true"
+}
 ```
 
 ###### Simple Request
@@ -123,7 +131,11 @@ from apiverve_slugify.apiClient import SlugifyAPIClient, SlugifyAPIClientError
 
 api = SlugifyAPIClient("[YOUR_API_KEY]")
 
-query = { "text": "Hello World! This is a Test & Example", "separator": "-", "lowercase": "true" }
+query = {
+    "text": "Hello World! This is a Test & Example",
+    "separator": "-",
+    "lowercase": "true"
+}
 
 try:
     result = api.execute(query)
@@ -144,7 +156,11 @@ from apiverve_slugify.apiClient import SlugifyAPIClient, SlugifyAPIClientError
 
 api = SlugifyAPIClient("[YOUR_API_KEY]")
 
-query = { "text": "Hello World! This is a Test & Example", "separator": "-", "lowercase": "true" }
+query = {
+    "text": "Hello World! This is a Test & Example",
+    "separator": "-",
+    "lowercase": "true"
+}
 
 try:
     result = api.execute(query)
@@ -178,7 +194,11 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_slugify.apiClient import SlugifyAPIClient, SlugifyAPIClientError
 
-query = { "text": "Hello World! This is a Test & Example", "separator": "-", "lowercase": "true" }
+query = {
+    "text": "Hello World! This is a Test & Example",
+    "separator": "-",
+    "lowercase": "true"
+}
 
 # Using context manager ensures proper cleanup
 with SlugifyAPIClient("[YOUR_API_KEY]") as api:
@@ -204,7 +224,11 @@ from apiverve_slugify.apiClient import SlugifyAPIClient
 # Enable debug mode
 api = SlugifyAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "text": "Hello World! This is a Test & Example", "separator": "-", "lowercase": "true" }
+query = {
+    "text": "Hello World! This is a Test & Example",
+    "separator": "-",
+    "lowercase": "true"
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -219,8 +243,13 @@ from apiverve_slugify.apiClient import SlugifyAPIClient
 
 api = SlugifyAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "text": "Hello World! This is a Test & Example",
+    "separator": "-",
+    "lowercase": "true"
+}
+
 try:
-    query = { "text": "Hello World! This is a Test & Example", "separator": "-", "lowercase": "true" }
     result = api.execute(query)
     print(result)
 finally:
