@@ -17,7 +17,7 @@ const api = new slugifyAPI({
 var query = {
   "text": "Hello World! This is a Test & Example",
   "separator": "-",
-  "lowercase": "true"
+  "lowercase": true
 };
 
 // Make the API request using callback
