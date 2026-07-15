@@ -12,8 +12,14 @@ public class BasicExample {
         SlugifyAPIClient client = new SlugifyAPIClient("YOUR_API_KEY_HERE");
 
         try {
-            // Execute the API request (no parameters required)
-            APIResponse response = client.execute(null);
+            // Request body
+            Map&lt;String, Object&gt; parameters &#x3D; new HashMap&lt;&gt;();
+        parameters.put(&quot;text&quot;, &quot;Hello World! This is a Test &amp; Example&quot;);
+        parameters.put(&quot;separator&quot;, &quot;-&quot;);
+        parameters.put(&quot;lowercase&quot;, true);
+
+            // Execute the API request
+            APIResponse response = client.execute(parameters);
 
             // Check if the request was successful
             if (response.isSuccess()) {
