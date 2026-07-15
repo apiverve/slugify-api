@@ -62,7 +62,7 @@ Using the API is simple. All you have to do is make a request. The API will retu
 var query = {
   "text": "Hello World! This is a Test & Example",
   "separator": "-",
-  "lowercase": "true"
+  "lowercase": true
 };
 
 api.execute(query, function (error, data) {
@@ -84,7 +84,7 @@ You can also use promises to make requests. The API returns a promise that you c
 var query = {
   "text": "Hello World! This is a Test & Example",
   "separator": "-",
-  "lowercase": "true"
+  "lowercase": true
 };
 
 api.execute(query)
@@ -107,7 +107,7 @@ async function makeRequest() {
     var query = {
   "text": "Hello World! This is a Test & Example",
   "separator": "-",
-  "lowercase": "true"
+  "lowercase": true
 };
 
     try {
@@ -128,10 +128,11 @@ async function makeRequest() {
   "status": "ok",
   "error": null,
   "data": {
-    "original": "Hello World: A Complete Guide!",
-    "slug": "hello-world-a-complete-guide",
+    "original": "Hello World! This is a Test & Example",
+    "slug": "hello-world-this-is-a-test-example",
     "separator": "-",
-    "lowercase": true
+    "lowercase": true,
+    "length": 34
   }
 }
 ```
