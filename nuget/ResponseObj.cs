@@ -25,6 +25,9 @@ namespace APIVerve.API.Slugify
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -39,6 +42,21 @@ namespace APIVerve.API.Slugify
         public string Separator { get; set; }
 
         [JsonProperty("lowercase")]
-        public bool Lowercase { get; set; }
+        public bool? Lowercase { get; set; }
+
+        [JsonProperty("length")]
+        public long? Length { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
