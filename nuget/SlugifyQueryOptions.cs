@@ -26,6 +26,6 @@ namespace APIVerve.API.Slugify
         /// Convert to lowercase (default: true)
         /// </summary>
         [JsonProperty("lowercase")]
-        public string Lowercase { get; set; }
+        public bool? Lowercase { get; set; }
     }
 }
