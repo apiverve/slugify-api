@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/slugify",
-  "version": "1.2.0",
-  "description": "Slugify is a tool for converting text into URL-friendly slugs. It handles special characters, accents, and spaces to create clean, SEO-friendly URLs.",
+  "version": "1.2.2",
+  "description": "Slugify converts text into clean, URL-friendly slugs with custom separators and optional lowercase formatting. Pass any raw string to get back the original text and its normalized slug with accents stripped and spaces replaced.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/slugify-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/slugify?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/slugify?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
