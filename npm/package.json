@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/slugify",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Slugify converts text into clean, URL-friendly slugs with custom separators and optional lowercase formatting. Pass any raw string to get back the original text and its normalized slug with accents stripped and spaces replaced.",
   "main": "index.js",
   "types": "index.d.ts",
